@@ -1,0 +1,35 @@
+<!doctype html>
+<html>
+  <head>
+    <title>DOM Basic</title>
+    <script>
+      // 이벤트를 연결합니다.
+      window.onload = function () {
+        // 속성을 지정합니다.
+        document.body.setAttribute('data-custom', 'value');
+        // setAttribute("속성명", "속성값")
+        //  -> 해당 요소에 속성명="속성값" 으로 추가.
+        //  -> <body data-custom="value">
+
+        // 속성을 추출합니다.
+        let dataCustom = document.body.getAttribute('data-custom');
+        // 요소.getAttribute("속성명") : 속성값 얻어오기
+        alert(dataCustom);
+
+        let d = document.getElementsByTagName('div');
+
+        d[0].setAttribute('id', 'practice');
+        // 얻어오는 요소가 하나여도 배열에 담긴다!
+        d[0].setAttribute('class', 'pr');
+      };
+    </script>
+  </head>
+  <body>
+    <div>practice</div>
+
+    <script>
+      // div 태그에 id 속성 추가 - id명 : practice
+      // div 태그에 class 속성 추가 - class명 : pr
+    </script>
+  </body>
+</html>

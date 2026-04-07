@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      // 객체는 속성과 기능을 가진다.
+
+      // 문자열 리터럴 표기법 : '' ""
+      let person = {
+        name: '유인성',
+        eat: function (food) {
+          return `${this.name}이 ${food}를 먹습니다`;
+        },
+      };
+
+      // 메서드를 호출합니다.
+      let result = person.eat('밥');
+      alert(person.eat("밥"));
+      // 함수명 : 함수 자체
+      // 함수명() : 함수 호출
+    </script>
+  </body>
+</html>

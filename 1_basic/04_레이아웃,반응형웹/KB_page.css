@@ -1,0 +1,142 @@
+section {
+  /* border: 1px solid black; */
+}
+
+header {
+  height: 200px;
+  display: flex;
+}
+
+/* 로고 */
+header > section:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#main-logo {
+  width: 120px;
+}
+
+header > section:first-child {
+  flex-basis: 15%;
+}
+
+/* 검색 스타일 */
+header > section:nth-child(2) {
+  flex-basis: 70%;
+  margin: 0 30px;
+}
+
+header > section:last-child {
+  flex-basis: 15%;
+}
+
+#main-logo {
+  width: 120px;
+  border-radius: 5%;
+}
+
+header > section:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.search-area {
+  width: 500px;
+}
+
+.search-area fieldset {
+  border: 2px solid #ccc;
+  margin: 0;
+  padding: 7px;
+  border-radius: 5px;
+  display: flex;
+}
+
+#query {
+  width: 90%;
+  font-size: 20px;
+  border: none;
+  outline: none;
+}
+
+#search-btn {
+  width: 10%;
+  font-size: 1.1em;
+  background-color: white;
+  color: #444;
+}
+
+/* 네비게이션 */
+nav {
+  border-bottom: 2px solid black;
+  height: 50px;
+}
+
+nav > ul {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+nav li {
+  flex-basis: 150px;
+}
+
+nav a {
+  color: black;
+  text-decoration: none;
+  font-weight: bold;
+  display: block;
+  text-align: center;
+  height: 100%;
+  /* padding: 12px 0; */
+  line-height: 45px;
+}
+
+nav a:hover {
+  background-color: #444;
+  color: white;
+  height: 100%;
+  border-radius: 10px;
+}
+
+.content {
+  display: flex;
+  height: 750px;
+  margin: 20px;
+}
+
+.content > section:nth-child(1) {
+  flex-basis: 70%;
+}
+
+.content > section:nth-child(2) {
+  flex-basis: 30%;
+}
+
+footer {
+  height: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #444;
+  color: white;
+}
+
+footer > p {
+  font-weight: bold;
+}
+
+footer a {
+  text-decoration: none;
+  color: white;
+}
+
+footer span {
+  padding: 0 10px;
+}

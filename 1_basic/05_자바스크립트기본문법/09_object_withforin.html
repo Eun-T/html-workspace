@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>객체</title>
+  </head>
+  <body>
+    <script>
+      //   let obj = {
+      //     제품명 : ["7d", "건조", "망고"],
+      //     유형 : "당절임",
+      //     성분 : ["망고","설탕","메타아중","치자황색소"],
+      //     원산지 : "필리핀",
+      //   };
+      let obj = {
+        제품명: '7d, 건조, 망고',
+        유형: '당절임',
+        성분: '망고, 설탕, 메타아중, 치자황색소',
+        원산지: '필리핀',
+      };
+      //   alert(obj[1]);
+      for (let i in obj) {
+        // alert(i + ':' + obj[i]);
+        alert(`${i} : ${obj[i]}`)
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,27 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- 스크립트 -->
+    <script>
+      let date = new Date().getHours();
+      // alert(date);
+      if (date < 5) {
+        alert('잠을 자렴');
+      } else if (5 <= date && date < 7) {
+        alert('준비');
+      } else if (7 <= date && date < 9) {
+        alert('출근');
+      } else if (9 <= date && date < 12) {
+        alert('빈둥 빈둥');
+      } else if (12 <= date && date < 14) {
+        alert('식사');
+      } else if (14 <= date) {
+        alert('여러 가지 업무를 수행합니다');
+      }
+    </script>
+  </head>
+  <body></body>
+</html>

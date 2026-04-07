@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      // 개발자가 선언한 함수 (사용자 정의 함수, user-defined)
+      function rec() {
+        // 가로값 가져오기
+        let n1 = document.getElementById("n1").value
+        let n2 = document.getElementById("n2").value
+        let n11 = parseInt(n1)
+        let n12 = parseInt(n2)
+        let result = n11 * n12
+        // 세로값 가져오기
+        // 면적 계산하기
+        // 출력
+        alert('사각형의 면적 결과 : '+result);
+      }
+    </script>
+  </head>
+  <body>
+    <span style="color: blue">가로값</span> : <input type="text" id="n1" /> <br />
+    세로값 : <input type="text" id="n2"/> <br />
+    <!-- 이미 브라우저에 들어있는 함수 (내장된 함수, built-in) -->
+    <!-- <button
+      style="background: yellow; color: red"
+      onclick="alert('버튼 클릭 했군!')"
+    > -->
+    <button style="background: yellow; color: red" onclick="rec()">
+      사각형의 면적 구하기
+    </button>
+  </body>
+</html>
